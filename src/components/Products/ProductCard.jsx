@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ name, img, category }) => {
+const ProductCard = ({ name, img, category, id }) => {
   const navigate = useNavigate(); 
-  const handleClick = (name) =>{ 
-    const path = `/product-detail/${name}`; 
+  const handleClick = (id) =>{ 
+    const path = `/item/${id}`; 
     navigate(path);
   }
   return (
@@ -14,8 +14,8 @@ const ProductCard = ({ name, img, category }) => {
       <Card.Img variant='top' src={img} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Subtitle>{category}</Card.Subtitle>
-        <Button variant='primary' onClick={()=>handleClick(name)}>
+        <Card.Subtitle>{category?.name}</Card.Subtitle>
+        <Button variant='primary' onClick={()=>handleClick(id)}>
           View
         </Button>
       </Card.Body>

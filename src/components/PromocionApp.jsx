@@ -8,7 +8,7 @@ const PromocionApp = () => {
         <Row>
           <Col md={6} className='text-center'>
             <Image
-              src={'images/preview2.jpg'}
+              src={'https://i.postimg.cc/D0rzsVx9/preview2.jpg'}
               alt={'Burger King App'}
               width={480}
             />
@@ -25,7 +25,7 @@ const PromocionApp = () => {
                   rel='noreferrer'
                 >
                   <Image
-                    src={'images/google_play.png'}
+                    src={'https://i.postimg.cc/Sx0XJrDF/google-play.png'}
                     alt={'Android'}
                     width={135}
                   />
@@ -36,7 +36,7 @@ const PromocionApp = () => {
                   rel='noreferrer'
                 >
                   <Image
-                    src={'images/app__store.png'}
+                    src={'https://i.postimg.cc/gjnw6tCd/app-store.png'}
                     alt={'Apple'}
                     width={135}
                   />

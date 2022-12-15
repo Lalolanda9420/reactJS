@@ -1,15 +1,12 @@
 import React from 'react';
-import { Alert, Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import ProductsContainer from './Products/ProductsContainer';
 
-const ItemListContainer = ({greating}) => {
+const ItemListContainer = () => {
   return (
     <Container>
       <Row>
-        <Col md={12} className='text-center'>
-          <Alert variant='danger'>
-            {greating}
-          </Alert>
-        </Col>
+        <ProductsContainer />
       </Row>
     </Container>
   );
