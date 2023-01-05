@@ -9,7 +9,7 @@ import {
   Row,
 } from 'react-bootstrap';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-// import { notify } from './helpers/notify';
+import ItemCount from '../ItemCount';
 
 function ProductDetailCard() {
   const { id } = useParams();
@@ -67,7 +67,7 @@ function ProductDetailCard() {
             </Link>
             <span>{`Price: $${product?.price}`}</span>
             <p>{product?.description}</p>
-            <Button onClick={() => navigate('*')}>Add to cart</Button>
+            <ItemCount product={product} stock={10} />
           </Col>
         </Row>
       </Container>

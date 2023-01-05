@@ -1,8 +1,11 @@
 import { Router } from './routes/Router';
+import CartProvider  from './context/CartContext';
 function App() {
  
   return (
-   <Router/>
+    <CartProvider>
+      <Router/>
+    </CartProvider> 
   );
 }
 

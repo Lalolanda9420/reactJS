@@ -20,8 +20,8 @@ const ProductsContainer = () => {
     <CustomAlert msg={'No data'} variant={'warning'}/>
   ) : (
     <>
-      {products?.map((p, i) => (
-        <Col key={i}>
+      {products?.map((p) => (
+        <Col key={p.id}>
           <ProductCard
             id={p.id}
             name={p.title}
