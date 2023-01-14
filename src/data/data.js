@@ -1,68 +1,211 @@
-const data = {
-  products: [
-    {
-      name: 'Free Shirt',
-      slug: 'free-shirt',
-      category: 'Shirts',
-      image: '/images/shirt1.jpg',
-      price: 70,
-      rating: 4.5,
-      countInStock: 20,
-      description: 'A popular shirt',
+export const products = [
+  {
+    id: 37,
+    title: "JOHNY STOP LOOPING",
+    price: 65,
+    description:
+      "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+    images: [
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=5387",
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=9131",
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=5082",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-06T13:26:01.000Z",
+    category: {
+      id: 1,
+      name: "Clothes",
+      image: "https://api.lorem.space/image/fashion?w=640&h=480&r=9695",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-06T20:07:50.000Z",
     },
-    {
-      name: 'Fit Shirt',
-      slug: 'fit-shirt',
-      category: 'Shirts',
-      image: '/images/shirt2.jpg',
-      price: 80,
-      rating: 3.2,
-      countInStock: 20,
-      description: 'A popular shirt',
+  },
+  {
+    id: 38,
+    title: "JOHNY STOP LOOPING",
+    price: 248,
+    description:
+      "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+    images: [
+      "https://api.lorem.space/image/furniture?w=640&h=480&r=2939",
+      "https://api.lorem.space/image/furniture?w=640&h=480&r=9618",
+      "https://api.lorem.space/image/furniture?w=640&h=480&r=7198",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-06T13:26:10.000Z",
+    category: {
+      id: 3,
+      name: "Home",
+      image: "https://api.lorem.space/image/furniture?w=640&h=480&r=8056",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-06T20:10:50.000Z",
     },
-    {
-      name: 'Slim Shirt',
-      slug: 'slim-shirt',
-      category: 'Shirts',
-      image: '/images/shirt3.jpg',
-      price: 90,
-      rating: 4.5,
-      countInStock: 20,
-      description: 'A popular shirt',
+  },
+  {
+    id: 39,
+    title: "Generic Fresh Salad",
+    price: 502,
+    description:
+      "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+    images: [
+      "https://api.lorem.space/image?w=640&h=480&r=3664",
+      "https://api.lorem.space/image?w=640&h=480&r=5027",
+      "https://api.lorem.space/image?w=640&h=480&r=6350",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-05T22:20:42.000Z",
+    category: {
+      id: 5,
+      name: "Others",
+      image: "https://api.lorem.space/image?w=640&h=480&r=4088",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-05T22:20:42.000Z",
     },
-    {
-      name: 'Jeans Pants',
-      slug: 'jean-pants',
-      category: 'Pants',
-      image: '/images/pants1.jpg',
-      price: 90,
-
-      rating: 2.9,
-
-      countInStock: 20,
-      description: 'Smart looking pants',
+  },
+  {
+    id: 40,
+    title: "Luxurious Cotton Pizza",
+    price: 66,
+    description:
+      "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+    images: [
+      "https://api.lorem.space/image?w=640&h=480&r=4404",
+      "https://api.lorem.space/image?w=640&h=480&r=7452",
+      "https://api.lorem.space/image?w=640&h=480&r=6306",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-06T19:30:21.000Z",
+    category: {
+      id: 5,
+      name: "Others",
+      image: "https://api.lorem.space/image?w=640&h=480&r=4088",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-05T22:20:42.000Z",
     },
-    {
-      name: 'Fit Pants',
-      slug: 'fit-pants',
-      category: 'Pants',
-      image: '/images/pants2.jpg',
-      price: 95,
-      rating: 3.5,
-      countInStock: 20,
-      description: 'A popular pants',
+  },
+  {
+    id: 41,
+    title: "Bespoke Fresh Cheese",
+    price: 412,
+    description:
+      "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    images: [
+      "https://api.lorem.space/image?w=640&h=480&r=6769",
+      "https://api.lorem.space/image?w=640&h=480&r=3880",
+      "https://api.lorem.space/image?w=640&h=480&r=7261",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-05T22:20:42.000Z",
+    category: {
+      id: 5,
+      name: "Others",
+      image: "https://api.lorem.space/image?w=640&h=480&r=4088",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-05T22:20:42.000Z",
     },
-    {
-      name: 'Classic Pants',
-      slug: 'classic-pants',
-      category: 'Pants',
-      image: '/images/pants3.jpg',
-      price: 75,
-      rating: 2.4,
-      countInStock: 20,
-      description: 'A popular pants',
+  },
+  {
+    id: 42,
+    title: "Refined Plastic Hat",
+    price: 851,
+    description:
+      "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+    images: [
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=6003",
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=1362",
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=9008",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-05T22:20:42.000Z",
+    category: {
+      id: 1,
+      name: "Clothes",
+      image: "https://api.lorem.space/image/fashion?w=640&h=480&r=9695",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-06T20:07:50.000Z",
     },
-  ],
-};
-
-export default data;
+  },
+  {
+    id: 43,
+    title: "Handmade Plastic Tuna",
+    price: 657,
+    description:
+      "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+    images: [
+      "https://api.lorem.space/image/furniture?w=640&h=480&r=9041",
+      "https://api.lorem.space/image/furniture?w=640&h=480&r=9020",
+      "https://api.lorem.space/image/furniture?w=640&h=480&r=4053",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-05T22:20:42.000Z",
+    category: {
+      id: 3,
+      name: "Home",
+      image: "https://api.lorem.space/image/furniture?w=640&h=480&r=8056",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-06T20:10:50.000Z",
+    },
+  },
+  {
+    id: 44,
+    title: "Tasty Cotton Shirt",
+    price: 451,
+    description:
+      "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+    images: [
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=3590",
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=1931",
+      "https://api.lorem.space/image/fashion?w=640&h=480&r=8872",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-05T22:20:42.000Z",
+    category: {
+      id: 1,
+      name: "Clothes",
+      image: "https://api.lorem.space/image/fashion?w=640&h=480&r=9695",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-06T20:07:50.000Z",
+    },
+  },
+  {
+    id: 45,
+    title: "JOHNY STOP LOOPING",
+    price: 369,
+    description:
+      "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+    images: [
+      "https://api.lorem.space/image/shoes?w=640&h=480&r=6032",
+      "https://api.lorem.space/image/shoes?w=640&h=480&r=115",
+      "https://api.lorem.space/image/shoes?w=640&h=480&r=1790",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-06T13:26:15.000Z",
+    category: {
+      id: 4,
+      name: "Shoes",
+      image: "https://api.lorem.space/image/shoes?w=640&h=480&r=4169",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-05T22:20:42.000Z",
+    },
+  },
+  {
+    id: 46,
+    title: "Electronic Fresh Bike",
+    price: 706,
+    description: "The Football Is Good For Training And Recreational Purposes",
+    images: [
+      "https://api.lorem.space/image/shoes?w=640&h=480&r=831",
+      "https://api.lorem.space/image/shoes?w=640&h=480&r=240",
+      "https://api.lorem.space/image/shoes?w=640&h=480&r=5886",
+    ],
+    creationAt: "2023-01-05T22:20:42.000Z",
+    updatedAt: "2023-01-06T14:32:03.000Z",
+    category: {
+      id: 4,
+      name: "Shoes",
+      image: "https://api.lorem.space/image/shoes?w=640&h=480&r=4169",
+      creationAt: "2023-01-05T22:20:42.000Z",
+      updatedAt: "2023-01-05T22:20:42.000Z",
+    },
+  },
+];

@@ -2,18 +2,19 @@ import { useEffect, useState } from 'react';
 import { Col } from 'react-bootstrap';
 import ProductCard from './ProductCard';
 import { CustomAlert } from '../CustomAlert';
+import  { getItem } from '../../helpers/firestore.controllers';
+ 
+import { createItem, getItems } from '../../helpers/firestore.controllers';
 
 const ProductsContainer = () => {
   const [products, setProducts] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
-    setIsLoading(true);
-    fetch('https://api.escuelajs.co/api/v1/products/?offset=0&limit=10')
-      .then((data) => data.json())
-      .then((json) => setProducts(json))
-      .catch((error) => console.log(error))
-      .finally(() => setIsLoading(false));
+    getItems('products')
+      .then( resp => setProducts(resp));
   }, []);
+
   return isLoading ? (
     <CustomAlert msg={'Loading...'} variant={'info'} />
   ) : !products ? (

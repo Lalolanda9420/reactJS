@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import ItemListContainer from '../components/ItemListContainer';
 import NavBar from '../components/NavBar';
 import PromocionApp from '../components/PromocionApp';
+import Checkout from '../pages/Checkout';
 import ProductDetail from '../pages/ProductDetail';
 import ShopCart from '../pages/ShopCart';
 export const Router = () => {
@@ -17,6 +18,7 @@ export const Router = () => {
         <Route path='/category/:id' element={<ItemListContainer />} />
         <Route path='/item/:id' element={<ProductDetail />} />
         <Route path='/cart' element={<ShopCart />} />
+        <Route path='/checkout' element={<Checkout />} />
         <Route path='*' element={<Error404/>}/>
       </Routes>
       <div>
